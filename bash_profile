@@ -1,3 +1,4 @@
+export EDITOR=vim
 alias 'll'='ls -AlG'
 
 alias 'ag'='ag --color-path=37'
@@ -145,3 +146,4 @@ set_prompts() {
 
 set_prompts
 unset set_prompts
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi

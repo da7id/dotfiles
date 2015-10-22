@@ -40,7 +40,7 @@ let g:ctrlp_custom_ignore = {
 let NERDTreeShowHidden=1
 let NERDTreeShowLineNumbers=1
 let NERDTreeIgnore = ['.swp']
-
+let NERDTreeHijackNetrw=1
 " Disallow NERDTree from remapping C-j/k. This was conflicting with tmux/vim
 " split navigation.
 let g:NERDTreeMapJumpNextSibling = '<Nop>'
@@ -177,7 +177,7 @@ set expandtab
 set lazyredraw
 
 " Enable relative line numbers.
-"set relativenumber
+set relativenumber
 
 "------------------------------------------------------------
 " Mappings {{{1
