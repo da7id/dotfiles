@@ -1,4 +1,4 @@
-" Author: Mitchell Barron
+" Author: David Barron
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -180,7 +180,7 @@ set lazyredraw
 set relativenumber
 
 "------------------------------------------------------------
-" Mappings {{{1
+" Mappings
 
 " Map Y to act like D and C, i.e. to yank until EOL, rather than act as yy,
 " which is the default
