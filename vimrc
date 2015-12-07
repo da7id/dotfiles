@@ -1,4 +1,4 @@
-" Author: David Barron
+" Author: Mitchell Barron
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -179,6 +179,12 @@ set lazyredraw
 " Enable relative line numbers.
 set relativenumber
 
+" Folding
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=1
+
 "------------------------------------------------------------
 " Mappings
 
@@ -203,3 +209,6 @@ map <Leader>n :NERDTreeToggle<CR>
 nmap <Leader>f <plug>(easymotion-s)
 let g:ctrlp_map = '<Leader>p'
 let g:ctrlp_cmd = 'CtrlP'
+
+
+set clipboard=unnamed
