@@ -6,6 +6,13 @@ alias 'mvim'='/Applications/MacVim.app/Contents/MacOS/MacVim'
 
 alias 'gs'='git status -sb'
 alias 'gl'='git log --oneline -10'
+alias 'gco'='git checkout'
+alias 'gc'='git commit -m'
+alias 'gb'='git branch'
+alias 'gd'='git diff'
+alias 'ga'='git add'
+
+alias 'mux'='tmuxinator'
 
 # prettify JSON by piping to this alias.
 alias 'json'='python -m json.tool'
