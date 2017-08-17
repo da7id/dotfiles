@@ -58,13 +58,13 @@ hs.hotkey.bind(yankkey, "o", function() push(0.5,0,0.5,0.5) end)
 hs.hotkey.bind(yankkey, "u", function() push(0,0,0.5,0.5) end)
 
 --App shortcutes
-hs.hotkey.bind(hyper, "y", function() hs.application.launchOrFocus("Safari") end)
-hs.hotkey.bind(hyper, "u", function() hs.application.launchOrFocus("iTerm") end)
-hs.hotkey.bind(hyper, "i", function() hs.application.launchOrFocus("Slack") end)
-hs.hotkey.bind(hyper, "o", function() hs.application.launchOrFocus("Messages") end)
-hs.hotkey.bind(hyper, "p", function() hs.application.launchOrFocus("Mail") end)
-hs.hotkey.bind(hyper, "[", function() hs.application.launchOrFocus("iTunes") end)
-hs.hotkey.bind(hyper, ";", function() hs.application.launchOrFocus("Textual") end)
+hs.hotkey.bind(hyper, "c", function() hs.application.launchOrFocus("Google Chrome") end)
+hs.hotkey.bind(hyper, "t", function() hs.application.launchOrFocus("iTerm") end)
+hs.hotkey.bind(hyper, "s", function() hs.application.launchOrFocus("Slack") end)
+hs.hotkey.bind(hyper, "d", function() hs.application.launchOrFocus("Discord") end)
+hs.hotkey.bind(hyper, "e", function() hs.application.launchOrFocus("Microsoft Outlook") end)
+hs.hotkey.bind(hyper, "m", function() hs.application.launchOrFocus("Messages") end)
+hs.hotkey.bind(hyper, "i", function() hs.application.launchOrFocus("iTunes") end)
 
 --Focus windows
 local function focus(direction)
@@ -92,25 +92,3 @@ hs.hotkey.bind(hyper, "left", focus("west"))
 hs.grid.ui.showExtraKeys = false
 hs.grid.ui.textSize = 25
 hs.grid.setGrid('10x4')
-hs.hotkey.bind(hyper, "r", function()
-  hs.grid.show()
-end)
-
-hs.hotkey.bind(hyper, "z", function()
-  hs.mjomatic.go({
-      "i",
-      "",
-      "i iTerm"
-    })
-end)
-
-hs.hotkey.bind(hyper, "c", function()
-  hs.mjomatic.go({
-    "sssssstttt",
-    "ssssssmmmm",
-    "",
-    "s Slack",
-    "t Textual IRC Client",
-    "m Messages"
-  })
-end)
