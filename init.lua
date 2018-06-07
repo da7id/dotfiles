@@ -56,15 +56,20 @@ hs.hotkey.bind(yankkey, ".", function() push(0.5,0.5,0.5,0.5) end)
 hs.hotkey.bind(yankkey, "m", function() push(0,0.5,0.5,0.5) end)
 hs.hotkey.bind(yankkey, "o", function() push(0.5,0,0.5,0.5) end)
 hs.hotkey.bind(yankkey, "u", function() push(0,0,0.5,0.5) end)
+hs.hotkey.bind(yankkey, "h", function() hs.window.focusedWindow():moveOneScreenWest() end)
+hs.hotkey.bind(yankkey, ";", function() hs.window.focusedWindow():moveOneScreenEast() end)
+
+hs.hotkey.bind(hyper, "space", function() hs.eventtap.keyStroke({},"return") end)
 
 --App shortcutes
-hs.hotkey.bind(hyper, "c", function() hs.application.launchOrFocus("Google Chrome") end)
+hs.hotkey.bind(hyper, "c", function() hs.application.launchOrFocus("Firefox") end)
 hs.hotkey.bind(hyper, "t", function() hs.application.launchOrFocus("iTerm") end)
 hs.hotkey.bind(hyper, "s", function() hs.application.launchOrFocus("Slack") end)
 hs.hotkey.bind(hyper, "d", function() hs.application.launchOrFocus("Discord") end)
 hs.hotkey.bind(hyper, "e", function() hs.application.launchOrFocus("Microsoft Outlook") end)
-hs.hotkey.bind(hyper, "m", function() hs.application.launchOrFocus("Messages") end)
 hs.hotkey.bind(hyper, "i", function() hs.application.launchOrFocus("iTunes") end)
+hs.hotkey.bind(hyper, "m", function() hs.application.launchOrFocus("Microsoft Lync") end)
+hs.hotkey.bind(hyper, "r", function() hs.application.launchOrFocus("Trello") end)
 
 --Focus windows
 local function focus(direction)
