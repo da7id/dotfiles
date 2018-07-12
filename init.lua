@@ -63,6 +63,7 @@ hs.hotkey.bind(hyper, "space", function() hs.eventtap.keyStroke({},"return") end
 
 --App shortcutes
 hs.hotkey.bind(hyper, "c", function() hs.application.launchOrFocus("Firefox") end)
+hs.hotkey.bind(hyper, "x", function() hs.application.launchOrFocus("Google Chrome") end)
 hs.hotkey.bind(hyper, "t", function() hs.application.launchOrFocus("iTerm") end)
 hs.hotkey.bind(hyper, "s", function() hs.application.launchOrFocus("Slack") end)
 hs.hotkey.bind(hyper, "d", function() hs.application.launchOrFocus("Discord") end)
