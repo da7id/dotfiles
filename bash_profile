@@ -21,6 +21,9 @@ alias 'json'='python -m json.tool'
 alias ms='[ -f settings-development.json ] && meteor run --settings settings-development.json || meteor run'
 alias gpl='git pull && git submodule foreach git pull origin master'
 
+# Learnyounode shortcut
+alias lyn='learnyounode'
+
 prompt_git() {
     local s=""
     local branchName=""
@@ -154,3 +157,16 @@ set_prompts() {
 set_prompts
 unset set_prompts
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+# Set environmental variables for ECC portal project
+export ECC_ENVIRONMENT=david
+
+# Setup WP Docker aliases
+alias dcwp='docker-compose exec --user www-data phpfpm wp'
+alias dcbash='docker-compose exec --user root phpfpm bash'
+alias dcup='docker-compose -f docker-compose.yml -f admin-compose.yml up'
+export PATH="/usr/local/opt/ruby/bin:$PATH;/usr/local/lib/ruby/gems/2.6.0/bin"
+
+eval "$(rbenv init -)"
